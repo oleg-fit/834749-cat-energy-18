@@ -29,7 +29,7 @@
   border-radius: 50%;
 }
 
-.program-list__check-box:after {
+.program-list__check-box::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -51,7 +51,7 @@
   outline: auto;
 }
 
-.program-list__input:checked + .program-list__check-box:after {
+.program-list__input:checked + .program-list__check-box::after {
   transform: translate(-50%, -50%) scale(1);
 }
 
@@ -71,7 +71,7 @@
   color: rgba(34, 34, 34, 0.3);
 }
 
-.program-list__input:checked:disabled + .program-list__check-box:after {
+.program-list__input:checked:disabled + .program-list__check-box::after {
   background: rgba(104, 183, 56, 0.3);
 
   transform: translate(-50%, -50%) scale(1);

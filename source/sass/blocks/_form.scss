@@ -44,7 +44,7 @@
   margin-bottom: 10px;
 }
 
-.form__fieldset--comment{
+.form__fieldset--comment {
   padding-left: 19px;
   margin-bottom: 23px;
 }
@@ -61,7 +61,7 @@
   background-color: #ffffff;
 }
 
-.form__legend:after {
+.form__legend::after {
   content: "";
   position: absolute;
   top: 0;
@@ -71,7 +71,7 @@
   margin-top: 14px;
   margin-left: 23px;
 
-  background-color:#68b738;
+  background-color: #68b738;
   z-index: -1;
 }
 
@@ -90,7 +90,7 @@
   border: 1px solid #e6e6e6;
   resize: none;
 
-  &::placeholder{
+  &::placeholder {
     text-transform: uppercase;
   }
 
@@ -130,7 +130,7 @@
   margin-top: 21px;
   margin-left: 62px;
 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: -0.2px;
@@ -174,7 +174,7 @@ Media min-width: 768px*/
     max-width: 630px;
   }
 
-  .form__fieldset--comment{
+  .form__fieldset--comment {
     margin-bottom: 60px;
   }
 
@@ -210,12 +210,11 @@ Media min-width: 768px*/
     height: 3px;
     margin-top: 22px;
     margin-right: 39px;
-    background-color:
-    #68b738;
+    background-color: #68b738;
     z-index: -1;
   }
 
-  .form__legend span{
+  .form__legend span {
     display: inline;
     padding-right: 3px;
 
@@ -303,7 +302,7 @@ Media min-width: 1300px*/
     margin-left: -1px;
   }
 
-  .form__contacts-list{
+  .form__contacts-list {
     margin-top: 5px;
   }
 

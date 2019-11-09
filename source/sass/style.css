@@ -3,7 +3,7 @@ Basic styles */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Oswald', Helvetica, sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
 }
 
@@ -18,7 +18,7 @@ a {
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* =====================================================================================
@@ -181,7 +181,7 @@ Media min-width: 768px*/
   background-color: #ffffff;
 }
 
-.form__legend:after {
+.form__legend::after {
   content: "";
   position: absolute;
   top: 0;
@@ -257,7 +257,7 @@ Media min-width: 768px*/
   display: block;
   margin-top: 21px;
   margin-left: 62px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: -0.2px;
@@ -548,7 +548,7 @@ Media min-width: 1300px*/
   border-radius: 50%;
 }
 
-.program-list__check-box:after {
+.program-list__check-box::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -569,7 +569,7 @@ Media min-width: 1300px*/
   outline: auto;
 }
 
-.program-list__input:checked + .program-list__check-box:after {
+.program-list__input:checked + .program-list__check-box::after {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
 }
@@ -590,7 +590,7 @@ Media min-width: 1300px*/
   color: rgba(34, 34, 34, 0.3);
 }
 
-.program-list__input:checked:disabled + .program-list__check-box:after {
+.program-list__input:checked:disabled + .program-list__check-box::after {
   background: rgba(104, 183, 56, 0.3);
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
@@ -791,7 +791,7 @@ Media min-width: 1300px*/
   color: rgba(34, 34, 34, 0.3);
 }
 
-.extra-list__input:checked:disabled + .extra-list__check-box:after {
+.extra-list__input:checked:disabled + .extra-list__check-box::after {
   opacity: 0.3;
 }
 
