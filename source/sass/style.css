@@ -67,8 +67,9 @@ Visually-hidden */
 
 /* =====================================================================================
 Blocks style */
-.btn-green {
-  width: 280px;
+.btn-page {
+  max-width: 280px;
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 16px;
@@ -80,25 +81,29 @@ Blocks style */
   border: transparent;
 }
 
-.btn-green:hover, .btn-green:focus {
+.btn-page:hover, .btn-page:focus {
   background-color: #5eaa2f;
 }
 
-.btn-green:active {
+.btn-page:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-page--grey {
+  color: #444444;
+  background-color: #f2f2f2;
+}
+
+.btn-page--grey:hover, .btn-page--grey:focus {
+  background-color: #ebebeb;
+}
+
+.btn-page--grey:active {
+  color: rgba(68, 68, 68, 0.3);
 }
 
 /* =====================================================================================
 Media min-width: 768px*/
-@media (min-width: 768px) {
-  .btn-green {
-    width: 283px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    font-size: 20px;
-  }
-}
-
 /* =====================================================================================
 Form.html style */
 .form-page__section {
@@ -827,6 +832,253 @@ Media min-width: 1300px*/
 @media (min-width: 1300px) {
   .extra-list__item {
     width: 245px;
+  }
+}
+
+/* =====================================================================================
+Catalog.html style */
+.catalog {
+  padding-top: 35px;
+  padding-bottom: 25px;
+}
+
+.catalog-title {
+  margin-top: 14px;
+  margin-bottom: 29px;
+  padding-left: 20px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #111111;
+}
+
+/* =====================================================================================
+Media min-width: 768px*/
+@media (min-width: 768px) {
+  .catalog-title {
+    padding: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+/* =====================================================================================
+Media min-width: 1300px*/
+@media (min-width: 1300px) {
+  .catalog {
+    padding-top: 55px;
+  }
+}
+
+.catalog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-list__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.catalog-list__item {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 25px;
+  border: 1px solid #ededed;
+  border-bottom: transparent;
+}
+
+.catalog-list__item:last-child {
+  padding-top: 26px;
+  text-align: center;
+  border: 1px solid #ededed;
+}
+
+.catalog-list__item:last-child .catalog-list__title {
+  max-width: 100%;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.catalog-list__item:last-child .catalog-list__text {
+  display: block;
+  margin-bottom: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.15px;
+  color: #444444;
+}
+
+.catalog-list__inner {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.catalog-list__img-block {
+  margin-top: -5px;
+}
+
+.catalog-list__btn {
+  margin-top: -5px;
+}
+
+.catalog-list__info-block {
+  width: 140px;
+}
+
+.catalog-list__title {
+  max-width: 80px;
+  margin-top: 16px;
+  margin-bottom: 13px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+/* =====================================================================================
+Media min-width: 768px*/
+@media (min-width: 768px) {
+  .catalog-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .catalog-list__item {
+    max-width: 325px;
+    margin-right: 58px;
+    margin-bottom: 58px;
+    padding-bottom: 40px;
+    background-color: #f2f2f2;
+    border: transparent;
+  }
+  .catalog-list__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .catalog-list__item:last-child {
+    padding-top: 68px;
+    background-color: #fff;
+  }
+  .catalog-list__item:last-child .catalog-list__title {
+    max-width: 170px;
+    margin-top: 60px;
+    margin-bottom: 23px;
+  }
+  .catalog-list__item:last-child .catalog-list__text {
+    margin: 0 auto;
+    max-width: 180px;
+    margin-bottom: 88px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .catalog-list__inner {
+    width: 249px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .catalog-list__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .catalog-list__info-block {
+    width: 100%;
+    margin-bottom: 31px;
+    text-align: center;
+  }
+  .catalog-list__title {
+    max-width: 130px;
+    margin: 0 auto;
+    margin-bottom: 27px;
+    font-size: 20px;
+  }
+  .catalog-list__btn {
+    max-width: 251px;
+  }
+}
+
+/* =====================================================================================
+Media min-width: 1300px*/
+@media (min-width: 1300px) {
+  .catalog-list__item {
+    max-width: 245px;
+    margin-right: 80px;
+  }
+  .catalog-list__item:nth-child(2n) {
+    margin-right: 80px;
+  }
+  .catalog-list__item:nth-child(4n) {
+    margin-right: 0;
+  }
+  .catalog-list__inner {
+    max-width: 169px;
+  }
+}
+
+.info-list {
+  padding: 0;
+  list-style: none;
+}
+
+.info-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info-list__item span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.info-list__item span:last-child {
+  margin-right: -3px;
+}
+
+/* =====================================================================================
+Media min-width: 768px*/
+@media (min-width: 768px) {
+  .info-list {
+    margin-right: 1px;
+  }
+  .info-list__item {
+    margin-bottom: 8px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+  .info-list__item span {
+    font-size: 16px;
+  }
+}
+
+/* =====================================================================================
+Media min-width: 1300px*/
+@media (min-width: 1300px) {
+  .info-list {
+    margin-right: 3px;
   }
 }
 /*# sourceMappingURL=style.css.map */

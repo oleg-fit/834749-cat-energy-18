@@ -1,0 +1,35 @@
+.catalog {
+  padding-top: 35px;
+  padding-bottom: 25px;
+}
+
+.catalog-title {
+  margin-top: 14px;
+  margin-bottom: 29px;
+  padding-left: 20px;
+
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+
+  color: #111111;
+}
+
+/* =====================================================================================
+Media min-width: 768px*/
+@media (min-width: 768px) {
+  .catalog-title {
+    padding: 0;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+/* =====================================================================================
+Media min-width: 1300px*/
+@media (min-width: 1300px) {
+  .catalog {
+    padding-top: 55px;
+  }
+}

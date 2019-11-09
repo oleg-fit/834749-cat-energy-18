@@ -70,7 +70,7 @@ Visually-hidden */
 
 /* =====================================================================================
 Blocks style */
-@import "blocks/btn-green";
+@import "blocks/btn-page";
 
 /* =====================================================================================
 Form.html style */
@@ -80,3 +80,9 @@ Form.html style */
 @import "blocks/program-list";
 @import "blocks/contacts-list";
 @import "blocks/extra-list";
+
+/* =====================================================================================
+Catalog.html style */
+@import "blocks/catalog";
+@import "blocks/catalog-list";
+@import "blocks/info-list";
