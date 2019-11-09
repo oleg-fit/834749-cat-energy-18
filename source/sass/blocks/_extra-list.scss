@@ -1,0 +1,105 @@
+.extra-list__item {
+  margin-bottom: 25px;
+}
+
+.extra-list__label {
+  position: relative;
+
+  padding-left: 46px;
+
+  color: #222222;
+
+  &:hover .extra-list__check-box {
+    border: 1px solid #bcbcbc;
+  }
+}
+
+.extra-list__check-box {
+  position: absolute;
+  top: -2px;
+  left: 0;
+
+  display: block;
+  height: 30px;
+  width: 30px;
+
+  border: 1px solid #cecece;
+}
+
+.extra-list__check-box::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: none;
+  height: 16px;
+  width: 21px;
+
+  background-image: url("../images/form/tick.svg");
+
+  transform: translate(-50%, -50%);
+}
+
+.extra-list__input:focus + .extra-list__check-box {
+  border: 1px solid #bcbcbc;
+  outline: auto;
+}
+
+.extra-list__input:checked + .extra-list__check-box::after {
+  display: block;
+}
+
+.extra-list__input:disabled + .extra-list__check-box {
+  border: 1px solid rgba(187, 187, 187, 0.3);
+}
+
+.extra-list__input:disabled ~ .extra-list__text {
+  color: rgba(34, 34, 34, 0.3);
+}
+
+.extra-list__input:checked:disabled + .extra-list__check-box {
+  border: 1px solid rgba(187, 187, 187, 0.3);
+}
+
+.extra-list__input:checked:disabled ~ .extra-list__text {
+  color: rgba(34, 34, 34, 0.3);
+}
+
+.extra-list__input:checked:disabled + .extra-list__check-box:after {
+  opacity: 0.3;
+}
+
+/* =====================================================================================
+Media min-width: 768px*/
+@media (min-width: 768px) {
+  .extra-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .extra-list__item {
+    width: 288px;
+    margin-bottom: 52px;
+  }
+
+  .extra-list__label {
+    padding-left: 58px;
+  }
+
+  .extra-list__check-box {
+    top: -5px;
+
+    height: 40px;
+    width: 40px;
+  }
+}
+
+/* =====================================================================================
+Media min-width: 1300px*/
+@media (min-width: 1300px) {
+  .extra-list__item {
+    width: 245px;
+  }
+}
