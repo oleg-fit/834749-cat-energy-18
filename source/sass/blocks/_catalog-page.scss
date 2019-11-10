@@ -1,0 +1,15 @@
+/* =====================================================================================
+Media min-width: 768px*/
+@media (min-width: 768px) {
+  .catalog-page__section:nth-child(2) {
+    margin-top: -91px;
+  }
+}
+
+/* =====================================================================================
+Media min-width: 1300px*/
+@media (min-width: 1300px) {
+  .catalog-page__section:nth-child(2) {
+    margin-top: -85px;
+  }
+}

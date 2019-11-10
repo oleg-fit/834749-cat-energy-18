@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="sass/normalize.css">
   <link rel="stylesheet" href="sass/style.css">
 </head>
-<body>
+<body class="form-page">
 
   <main class="form-page__main">
 
@@ -20,11 +20,9 @@
 
         <form class="form-page__form form" method="get" action="https://echo.htmlacademy.ru">
 
-          <div class="form__text">
-            <p>
-              Заполните анкету и мы подберем программу питания для вашего кота
-            </p>
-          </div>
+          <p class="form__text">
+            Заполните анкету и мы подберем программу питания для вашего кота
+          </p>
 
           <div class="form__fieldset-wrapper">
             <fieldset class="form__fieldset form__fieldset--cat">
@@ -71,7 +69,7 @@
                 <li class="program-list__item">
                   <label class="program-list__label" for="losing-weight">
                     <input class="program-list__input visually-hidden"  id="losing-weight" type="radio" name="program" value="losing-weight" checked>
-                    <span class="program-list__check-box"></span>
+                    <span class="program-list__radio"></span>
                     <span class="program-list__text">Похудение</span>
                   </label>
                 </li>
@@ -79,7 +77,7 @@
                 <li class="program-list__item">
                   <label class="program-list__label" for="mass-set">
                     <input class="program-list__input visually-hidden" type="radio" name="program" value="mass-set" id="mass-set">
-                    <span class="program-list__check-box"></span>
+                    <span class="program-list__radio"></span>
                     <span class="program-list__text">Набор массы</span>
                   </label>
                 </li>
@@ -87,7 +85,7 @@
                 <li class="program-list__item">
                   <label class="program-list__label" for="need-advice">
                     <input class="program-list__input visually-hidden" type="radio" name="program" value="need-advice" id="need-advice">
-                    <span class="program-list__check-box"></span>
+                    <span class="program-list__radio"></span>
                     <span class="program-list__text">Не знаю (Нужен ваш совет)</span>
                   </label>
                 </li>
