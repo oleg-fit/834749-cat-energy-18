@@ -1,0 +1,153 @@
+.products-list {
+  padding: 0;
+
+  list-style: none;
+}
+
+.products-list__item {
+  margin-bottom: 17px;
+}
+
+.products-list__inner {
+  margin-right: 20px;
+  margin-left: 20px;
+
+  border-top: 1px solid #cdcdcd;
+}
+
+.products-list__title {
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-left: 1px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.products-list__text {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 15px;
+  margin-left: -1px;
+
+  span {
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+
+    color: #444444;
+  }
+}
+
+/* =====================================================================================
+Media min-width: 768px*/
+@media (min-width: 768px) {
+  .products-list__item {
+    margin-bottom: 0;
+
+    border: 1px solid #d9d9d9;
+    border-bottom: transparent;
+
+    &:last-child {
+      border-bottom: 1px solid #d9d9d9;
+    }
+  }
+
+  .products-list__inner {
+    max-width: 633px;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 27px;
+
+
+    border-top: transparent;
+
+    .catalog-btn {
+      padding-right: 10px;
+    }
+  }
+
+  .products-list__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    margin-bottom: 22px;
+  }
+
+  .products-list__title {
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .products-list__text {
+    margin: 0;
+    justify-content: flex-end;
+
+    text-align: end;
+
+    span {
+      width: 135px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    span:nth-child(2n) {
+      max-width: 94px;
+    }
+  }
+}
+
+/* =====================================================================================
+Media min-width: 1300px*/
+@media (min-width: 1300px) {
+  .products-list {
+    max-width: 895px;
+    width: 100%;
+  }
+
+  .products-list__item {
+    border-right: transparent;
+    border-left: transparent;
+  }
+
+  .products-list__inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 895px;
+    margin: 0;
+    padding-top: 17px;
+    padding-bottom: 14px;
+
+    align-items: center;
+
+    .catalog-btn {
+      width: 245px;
+    }
+  }
+
+  .products-list__content {
+    max-width: 613px;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .products-list__text {
+    text-align-last: left;
+
+    span:first-child {
+      width: 243px;
+    }
+
+    span:nth-child(2n) {
+      width: 44px;
+    }
+  }
+}

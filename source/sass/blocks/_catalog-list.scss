@@ -84,12 +84,13 @@ Media min-width: 768px*/
   .catalog-list {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 136px;
   }
 
   .catalog-list__item {
     max-width: 325px;
     margin-right: 58px;
-    margin-bottom: 58px;
+    margin-bottom: 139px;
     padding-bottom: 40px;
 
     background-color: #f2f2f2;
@@ -133,9 +134,18 @@ Media min-width: 768px*/
     text-align: center;
   }
 
+  .catalog-list__img-block {
+    margin-top: -56px;
+  }
+
+  .catalog-list__item:nth-child(2n) .catalog-list__img-block {
+    margin-top: -92px;
+  }
+
   .catalog-list__info-block {
     width: 100%;
-    margin-bottom: 31px;
+    margin-top: 38px;
+    margin-bottom: 30px;
 
     text-align: center;
   }
@@ -159,6 +169,7 @@ Media min-width: 1300px*/
   .catalog-list__item {
     max-width: 245px;
     margin-right: 80px;
+    margin-bottom: 141px;
 
     &:nth-child(2n) {
       margin-right: 80px;
@@ -171,5 +182,9 @@ Media min-width: 1300px*/
 
   .catalog-list__inner {
     max-width: 169px;
+  }
+
+  .catalog-list__item:nth-child(2n) .catalog-list__info-block {
+    margin-top: 66px;
   }
 }
