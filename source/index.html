@@ -6,15 +6,136 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Главная</title>
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap&subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="scss/normalize.css">
-  <link rel="stylesheet" href="scss/style.css">
+  <link rel="stylesheet" href="sass/style.css">
 </head>
 <body>
 
+  <header class="form-page__header header">
+    <div class="container">
+      <div class="header__inner">
+
+        <div class="header__block-logo block-logo">
+
+          <a class="block-logo__link" href="#">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="https://via.placeholder.com/202x59">
+              <source media="(min-width: 768px)" srcset="https://via.placeholder.com/173x58">
+              <img class="page-header__logo" src="https://via.placeholder.com/33x38" alt="Логотип Cat Energy">
+            </picture>
+            <span>
+              <img src="https://via.placeholder.com/101x18" alt="Текст Cat Energy">
+            </span>
+          </a>
+
+          <button class="block-logo__btn">
+            <span class="block-logo__burger"></span>
+            <span class="visually-hidden">
+              Menu
+            </span>
+          </button>
+
+        </div>
+
+        <nav class="header__nav nav">
+
+          <ul class="nav__list">
+
+            <li class="nav__item nav__link--active">
+              <a class="nav__link" href="index.html">
+                Главная
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="form.html">
+                Подбор программы
+              </a>
+            </li>
+
+          </ul>  <!-- /.nav__list -->
+        </nav>  <!-- /.header__nav nav -->
+
+      </div>  <!-- /.header__inner -->
+    </div>  <!-- /.container -->
+  </header>  <!-- /.header -->
+
+  <footer class="footer">
+
+      <div class="footer__box-contacts">
+
+        <div class="footer__contacts">
+          <div class="container">
+            <p class="footer__contacts-text">
+              Приглашаем к сотрудничеству дилеров!
+            </p>
+            <p class="footer__contacts-adress">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </p>
+          </div>
+        </div>  <!-- /.footer__contacts -->
+
+        <div  class="footer__map">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="https://via.placeholder.com/1440x400">
+            <source media="(min-width: 768px)" srcset="https://via.placeholder.com/767x400">
+            <img class="contacts__map-img" src="https://via.placeholder.com/320x400" alt="Схема проезда ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          </picture>
+        </div>  <!-- /.footer__map -->
+
+        <iframe class="footer__map-iframe" src="https://yandex.ru/map-widget/v1/-/CGTnAVim" width="100%" height="400" frameborder="1" allowfullscreen="true"></iframe>
+
+      </div>  <!-- /.footer__box-contacts -->
+
+      <div class="footer__social">
+        <div class="container">
+          <div class="footer__social-inner">
+
+            <div class="footer__logo">
+              <a href="#">
+                <img class="" src="https://via.placeholder.com/128x24" alt="Cat Energy" width="128" height="24">
+              </a>
+            </div>
+
+            <ul class="footer__list social-list">
+
+              <li class="social-list-__item">
+                <a class="social-list__link" href="#">
+                  <img class="social-list__img" src="https://via.placeholder.com/22x12" alt="Мы в vk">
+                </a>
+              </li>
+
+              <li class="social-list__item">
+                <a class="social-list__link" href="#">
+                  <img class="social-list__img" src="https://via.placeholder.com/16x16" alt="Мы в insta">
+                </a>
+              </li>
+
+              <li class="social-list__item">
+                <a class="social-list__link" href="#">
+                  <img class="social-list__img" src="https://via.placeholder.com/10x19" alt="Мы в facebook">
+                </a>
+              </li>
+
+            </ul>
+
+            <a class="footer__html-academy" href="https://htmlacademy.ru/intensive/adaptive">
+              <span>HTML Academy</span>
+              <img src="https://via.placeholder.com/27x34"  alt="Логотип Html-Academy">
+            </a>
+
+          </div>  <!-- /.footer__social-inner -->
+        </div>  <!-- /.container -->
+      </div>  <!-- /.footer__social -->
 
 
 
-
+  </footer>  <!-- /.footer -->
 
 
 

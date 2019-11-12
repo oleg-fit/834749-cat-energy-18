@@ -69,6 +69,21 @@ Visually-hidden */
 }
 
 /* =====================================================================================
+Normalize */
+@import "normalize";
+
+/* =====================================================================================
+Header style */
+@import "blocks/header";
+@import "blocks/block-logo";
+@import "blocks/nav";
+
+/* =====================================================================================
+Footer style */
+@import "blocks/footer";
+@import "blocks/social-list";
+
+/* =====================================================================================
 Blocks style */
 @import "blocks/btn-page";
 
