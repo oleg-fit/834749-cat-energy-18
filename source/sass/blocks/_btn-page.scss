@@ -10,43 +10,30 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: #ffffff;
-  background-color: #68b738;
+  color: $color-white;
+  background-color: $color-green;
   border: transparent;
 
   &:hover,
   &:focus {
-    background-color: #5eaa2f;
+    background-color: $color-green-grass;
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba($color-white, 0.3);
   }
 }
 
 .btn-page--grey {
-  color: #444444;
-  background-color: #f2f2f2;
+  color: $color-bluish-black;
+  background-color: $color-smoky-white;
 
   &:hover,
   &:focus {
-    background-color: #ebebeb;
+    background-color: $color-grey;
   }
 
   &:active {
-    color: rgba(68, 68, 68, 0.3);
+    color: rgba($color-bluish-black, 0.3);
   }
 }
-
-/* =====================================================================================
-Media min-width: 768px*/
-// @media (min-width: 768px) {
-//   .btn-page {
-//     max-width: 283px;
-//     width: 100%;
-//     padding-top: 16px;
-//     padding-bottom: 16px;
-
-//     font-size: 20px;
-//   }
-// }

@@ -14,7 +14,7 @@
   padding-top: 30px;
   padding-bottom: 21px;
 
-  background-color: #f2f2f2;
+  background-color: $color-smoky-white;
 
   &::before {
     content: "";
@@ -26,7 +26,7 @@
     width: 50px;
     height: 50px;
 
-    background-color: #68b738;
+    background-color: $color-green;
     border-radius: 50%;
   }
 }
@@ -70,7 +70,6 @@
   font-weight: 400;
   line-height: 37px;
 
-  color: #111111;
   text-transform: uppercase;
 }
 
@@ -80,17 +79,16 @@
   padding-left: 20px;
 
   font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
   letter-spacing: -0.2px;
 
-  color: #444444;
+  color: $color-bluish-black;
 }
 
 .programs__list-link {
   position: relative;
 
   display: block;
+  width: 90px;
   margin-right: 20px;
   margin-left: 20px;
   padding-top: 19px;
@@ -98,10 +96,10 @@
   font-size: 16px;
   line-height: 16px;
 
-  color: #111111;
+  color: $color-black;
   text-transform: uppercase;
 
-  border-top: 1px solid #d9d9d9;
+  border-top: 1px solid $color-light-grey;
 
   &::after {
     content: "";
@@ -118,10 +116,10 @@
 
 /* =====================================================================================
 Media min-width: 768px*/
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .programs__list-item {
     margin-right: 0;
-    margin-bottom: 28px;
+    margin-bottom: 31px;
     margin-left: 0;
     padding-top: 76px;
     padding-bottom: 61px;
@@ -179,7 +177,8 @@ Media min-width: 768px*/
   }
 
   .programs__list-link {
-    margin-top: 58px;
+    width: 130px;
+    margin-top: 56px;
     margin-left: 0;
     padding: 0;
 
@@ -192,5 +191,63 @@ Media min-width: 768px*/
       top: 6px;
       left: 132px;
     }
+  }
+}
+
+/* =====================================================================================
+Media min-width: 1300px*/
+@media (min-width: $desktop-width) {
+  .programs__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .programs__list-item {
+    max-width: 570px;
+    width: 100%;
+    padding-top: 74px;
+
+    &::before {
+      top: 47px;
+      left: 53px;
+
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .programs__list-item:first-child {
+    &::after {
+      top: 41px;
+      left: 66px;
+
+      width: 70px;
+      height: 97px;
+    }
+  }
+
+  .programs__list-item:nth-child(2) {
+    &::after {
+      top: 69px;
+      left: 34px;
+
+      width: 134px;
+      height: 56px;
+    }
+  }
+
+  .programs__list-title {
+    margin-top: 2px;
+    margin-left: 161px;
+  }
+
+  .programs__list-text {
+    max-width: 500px;
+    margin-top: 73px;
+  }
+
+  .programs__list-link {
+    margin-top: 32px;
   }
 }

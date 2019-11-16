@@ -1,0 +1,128 @@
+.advantage__title {
+  margin-top: 23px;
+  margin-bottom: 35px;
+  margin-left: 20px;
+
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.advantage__list {
+  padding-left: 20px;
+
+  list-style: none;
+}
+
+.advantage__item {
+  position: relative;
+  font-family: "Arial", "Helvetica", sans-serif;
+  margin-bottom: 26px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+
+    background-color: $color-green;
+    background-size: 50px 50px;
+  }
+
+  &--leaf::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--powder::before {
+    background-image: url("../img/advantage-powder@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--dining::before {
+    background-image: url("../img/advantage-dining@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--clock::before {
+    background-image: url("../img/advantage-clock@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.advantage__text {
+  max-width: 200px;
+  margin-left: 80px;
+
+  color: $color-bluish-black;
+  letter-spacing: -0.2px;
+}
+
+/* =====================================================================================
+Media min-width: 768px*/
+@media (min-width: $tablet-width) {
+  .advantage__title {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 0;
+
+    font-size: 60px;
+  }
+
+  .advantage__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding-top: 158px;
+    padding-left: 0;
+  }
+
+  .advantage__item {
+    max-width: 325px;
+    width: 100%;
+    margin-bottom: 213px;
+
+    &::before {
+      top: -95px;
+
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .advantage__text {
+    margin-left: 0;
+    max-width: 260px;
+
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: normal;
+  }
+}
+
+/* =====================================================================================
+Media min-width: 1300px*/
+@media (min-width: $desktop-width) {
+  .advantage__title {
+    margin-top: 47px;
+  }
+
+  .advantage__item {
+    max-width: 245px;
+    margin-bottom: 0;
+  }
+
+  .advantage__text {
+    max-width: 245px;
+  }
+}
