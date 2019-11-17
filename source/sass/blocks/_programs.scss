@@ -1,0 +1,253 @@
+.programs__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.programs__list-item {
+  position: relative;
+
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 21px;
+
+  background-color: $color-smoky-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 26px;
+    right: 208px;
+
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    background-color: $color-green;
+    border-radius: 50%;
+  }
+}
+
+.programs__list-item:first-child {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 215px;
+
+    width: 35px;
+    height: 49px;
+
+    background-image: url("../img/icon-cat-slim.svg");
+    background-size: 100% auto;
+  }
+}
+
+.programs__list-item:nth-child(2) {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 36px;
+    right: 200px;
+
+    width: 67px;
+    height: 28px;
+
+    background-image: url("../img/icon-cat-pro.svg");
+    background-size: 100% auto;
+  }
+}
+
+.programs__list-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: 91px;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+
+  text-transform: uppercase;
+}
+
+.programs__list-text {
+  margin-bottom: 22px;
+  padding-right: 30px;
+  padding-left: 20px;
+
+  font-family: "Arial", "Helvetica", sans-serif;
+  letter-spacing: -0.2px;
+
+  color: $color-bluish-black;
+}
+
+.programs__list-link {
+  position: relative;
+
+  display: block;
+  width: 90px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-top: 19px;
+
+  font-size: 16px;
+  line-height: 16px;
+
+  color: $color-black;
+  text-transform: uppercase;
+
+  border-top: 1px solid $color-light-grey;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 24px;
+    left: 96px;
+    width: 23px;
+    height: 11px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+/* =====================================================================================
+Media min-width: 768px*/
+@media (min-width: $tablet-width) {
+  .programs__list-item {
+    margin-right: 0;
+    margin-bottom: 31px;
+    margin-left: 0;
+    padding-top: 76px;
+    padding-bottom: 61px;
+    padding-left: 53px;
+
+    &::before {
+      top: 92px;
+      right: 61px;
+
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .programs__list-item:first-child {
+    &::after {
+      top: 80px;
+      right: 92px;
+
+      width: 140px;
+      height: 196px;
+    }
+  }
+
+  .programs__list-item:nth-child(2) {
+    &::after {
+      top: 136px;
+      right: 28px;
+
+      width: 268px;
+      height: 112px;
+    }
+  }
+
+  .programs__list-title {
+    margin-bottom: 25px;
+    margin-left: 0;
+
+    font-size: 36px;
+    line-height: 37px;
+    text-align: left;
+  }
+
+  .programs__list-text {
+    max-width: 410px;
+    padding-left: 0;
+
+    font-size: 16px;
+    letter-spacing: normal;
+    line-height: 24px;
+  }
+
+  .programs__list-text--litle-width {
+    max-width: 370px;
+  }
+
+  .programs__list-link {
+    width: 130px;
+    margin-top: 56px;
+    margin-left: 0;
+    padding: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    border-top: transparent;
+
+    &::after {
+      top: 6px;
+      left: 132px;
+    }
+  }
+}
+
+/* =====================================================================================
+Media min-width: 1300px*/
+@media (min-width: $desktop-width) {
+  .programs__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .programs__list-item {
+    max-width: 570px;
+    width: 100%;
+    padding-top: 74px;
+
+    &::before {
+      top: 47px;
+      left: 53px;
+
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .programs__list-item:first-child {
+    &::after {
+      top: 41px;
+      left: 66px;
+
+      width: 70px;
+      height: 97px;
+    }
+  }
+
+  .programs__list-item:nth-child(2) {
+    &::after {
+      top: 69px;
+      left: 34px;
+
+      width: 134px;
+      height: 56px;
+    }
+  }
+
+  .programs__list-title {
+    margin-top: 2px;
+    margin-left: 161px;
+  }
+
+  .programs__list-text {
+    max-width: 500px;
+    margin-top: 73px;
+  }
+
+  .programs__list-link {
+    margin-top: 32px;
+  }
+}
