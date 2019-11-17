@@ -72,9 +72,9 @@
 /* =====================================================================================
 Media min-width: 768px*/
 @media (min-width: $tablet-width) {
-  .example-slider {
-    background: linear-gradient(left, $color-smoky-white 50%, $color-light-grey2 50%);
-  }
+  // .example-slider {
+  //   background: linear-gradient(left, $color-smoky-white 50%, $color-light-grey2 50%);
+  // }
 
   .example-slider__inner {
     padding-bottom: 76px;
