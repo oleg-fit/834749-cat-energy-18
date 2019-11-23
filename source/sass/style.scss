@@ -21,9 +21,11 @@ Btn-page style */
 @import "blocks/btn-page";
 /* =====================================================================================
 Header style */
-@import "blocks/block-logo";
+@import "blocks/header";
+@import "blocks/main-nav";
 /* =====================================================================================
 Index.html style */
+@import "blocks/main-page";
 @import "blocks/intro";
 @import "blocks/programs";
 @import "blocks/advantage";

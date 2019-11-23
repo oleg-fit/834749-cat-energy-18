@@ -7,85 +7,79 @@
   <title>Главная</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="main-page">
 
-  <header class="form-page__header header">
+  <header class="header">
     <div class="container">
       <div class="header__inner">
 
-        <div class="header__block-logo block-logo">
+        <a class="header__link" href="index.html">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="header__img" alt="логотип Cat Energy" src="img/logo-mobile.svg">
+          </picture>
+        </a>
 
-          <a class="block-logo__link" href="#">
-            <picture>
-              <source media="(min-width: 1300px)" srcset="https://via.placeholder.com/202x59">
-              <source media="(min-width: 768px)" srcset="https://via.placeholder.com/173x58">
-              <img class="page-header__logo" src="https://via.placeholder.com/33x38" alt="Логотип Cat Energy">
-            </picture>
-            <span>
-              <img src="https://via.placeholder.com/101x18" alt="Текст Cat Energy">
-            </span>
-          </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
 
-          <button class="block-logo__btn">
-            <span class="block-logo__burger"></span>
-            <span class="visually-hidden">
-              Menu
-            </span>
+          <button class="main-nav__toggle" type="button">
+            <span class="main-nav__bar"></span>
+            <span class="visually-hidden">Открыть список</span>
           </button>
 
-        </div>
+          <ul  class="main-nav__list">
 
-        <nav class="header__nav nav">
-
-          <ul class="nav__list">
-
-            <li class="nav__item">
-              <a class="nav__link" href="index.html">
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link main-nav__list-link--active" href="index.html">
                 Главная
               </a>
             </li>
 
-            <li class="nav__item">
-              <a class="nav__link" href="catalog.html">
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
 
-            <li class="nav__item">
-              <a class="nav__link nav__link--active" href="form.html">
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="form.html">
                 Подбор программы
               </a>
             </li>
 
-          </ul>  <!-- /.nav__list -->
-        </nav>  <!-- /.header__nav nav -->
+          </ul>  <!-- /.main-nav__list -->
+
+        </nav>  <!-- /.main-nav -->
 
       </div>  <!-- /.header__inner -->
     </div>  <!-- /.container -->
   </header>  <!-- /.header -->
 
   <section class="intro">
-    <div class="intro__inner">
+    <div class="container">
+      <div class="intro__inner">
 
-      <h1 class="intro__title">
-        Функциональное питание для котов
-      </h1>
+        <h1 class="intro__title">
+          Функциональное питание для котов
+        </h1>
 
-      <p class="intro__text">
-        Занялся собой? Займись котом!
-      </p>
+        <p class="intro__text">
+          Занялся собой? Займись котом!
+        </p>
 
-      <picture class="intro__picture">
-        <source media="(min-width: 1280px)" srcset="img/index-can-desktop@1x.png">
-        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-        <img alt="Продукт Energy" src="img/index-can-mobile@1x.png">
-      </picture>
+        <picture class="intro__picture">
+          <source media="(min-width: 1280px)" srcset="img/index-can-desktop@1x.png">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+          <img alt="Продукт Energy" src="img/index-can-mobile@1x.png">
+        </picture>
 
-      <a class="intro__link btn-page" href="#">
-        Подобрать программу
-      </a>
+        <a class="intro__link btn-page" href="#">
+          Подобрать программу
+        </a>
 
-    </div>  <!-- /.intro__inner -->
+      </div>  <!-- /.intro__inner -->
+    </div>
   </section>  <!-- /.intro -->
 
   <section class="programs">
@@ -166,79 +160,81 @@
   </section>  <!-- /.advantage -->
 
   <section class="example">
+    <div class="container">
 
-    <h2 class="example__title" >
-      Живой пример
-    </h2>
+      <h2 class="example__title" >
+        Живой пример
+      </h2>
 
-    <div class="example__content-wrapper">
+      <div class="example__content-wrapper">
 
-      <div class="example__description">
+        <div class="example__description">
 
-        <p class="example__text">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-
-        <div class="example__text-wrapper">
-          <ul class="example__list">
-
-            <li class="example__list-item">
-              <p class="example__list-result">
-                5 кг
-              </p>
-              <span class="example__list-text">
-                снижение веса
-              </span>
-            </li>
-
-            <li class="example__list-item">
-              <p class="example__list-result">
-                60 дней
-              </p>
-              <span class="example__list-text">
-                затрачено времени
-              </span>
-            </li>
-
-          </ul>
-          <p class="example__cost">
-            Затраты на питание: <span>15 000 руб.</span>
+          <p class="example__text">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
-        </div>
 
-      </div>  <!-- /.example__description -->
+          <div class="example__text-wrapper">
+            <ul class="example__list">
 
-      <div class="example-slider">
-        <div class="example-slider__inner">
+              <li class="example__list-item">
+                <p class="example__list-result">
+                  5 кг
+                </p>
+                <span class="example__list-text">
+                  снижение веса
+                </span>
+              </li>
 
-          <div class="example-slider__img-block">
-            <picture>
-              <source media="(min-width: 1280px)" srcset="img/before-desktop@1x.png 1x">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x">
-              <img alt="Огромный кот" class="example-slider__cat example-slider__cat--before" src="img/before-mobile@1x.png">
-            </picture>
+              <li class="example__list-item">
+                <p class="example__list-result">
+                  60 дней
+                </p>
+                <span class="example__list-text">
+                  затрачено времени
+                </span>
+              </li>
 
-            <picture>
-              <source media="(min-width: 1280px)" srcset="img/after-desktop@1x.png 1x">
-              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x">
-              <img alt="Спортивный кот" class="example-slider__cat example-slider__cat--after" src="img/after-mobile@1x.png">
-            </picture>
+            </ul>
+            <p class="example__cost">
+              Затраты на питание: <span>15 000 руб.</span>
+            </p>
           </div>
 
-          <div class="example-slider__btn-block">
-            <button class="example-slider__btn">Было</button>
+        </div>  <!-- /.example__description -->
 
-            <div class="example-slider__progress-line">
-              <span class="example-slider__line-circle"></span>
+        <div class="example-slider">
+          <div class="example-slider__inner">
+
+            <div class="example-slider__img-block">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/before-desktop@1x.png 1x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x">
+                <img alt="Огромный кот" class="example-slider__cat example-slider__cat--before" src="img/before-mobile@1x.png">
+              </picture>
+
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/after-desktop@1x.png 1x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x">
+                <img alt="Спортивный кот" class="example-slider__cat example-slider__cat--after" src="img/after-mobile@1x.png">
+              </picture>
             </div>
 
-            <button class="example-slider__btn">Стало</button>
-          </div>  <!-- /.example-slider -->
+            <div class="example-slider__btn-block">
+              <button class="example-slider__btn">Было</button>
 
-        </div>  <!-- /.example-slider__inner -->
-      </div>  <!-- /.example-slider -->
-    </div>
+              <div class="example-slider__progress-line">
+                <span class="example-slider__line-circle"></span>
+              </div>
 
+              <button class="example-slider__btn">Стало</button>
+            </div>  <!-- /.example-slider -->
+
+          </div>  <!-- /.example-slider__inner -->
+        </div>  <!-- /.example-slider -->
+      </div>
+
+    </div>  <!-- /.container -->
   </section>  <!-- /.example -->
 
   <footer class="footer">
@@ -314,6 +310,6 @@
   </footer>  <!-- /.footer -->
 
 
-
+  <script src="js/app.js"></script>
 </body>
 </html>

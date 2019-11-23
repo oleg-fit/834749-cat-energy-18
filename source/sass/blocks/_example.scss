@@ -106,7 +106,7 @@ Media min-width: 768px*/
   .example__title {
     margin-top: 34px;
     margin-bottom: 64px;
-    margin-left: 30px;
+    margin-left: 0;
 
     font-size: 60px;
     line-height: 60px;
@@ -114,9 +114,9 @@ Media min-width: 768px*/
 
   .example__description {
     margin-bottom: 0;
-    padding-right: 30px;
+    padding-right: 0;
     padding-bottom: 255px;
-    padding-left: 30px;
+    padding-left: 0;
   }
 
   .example__text {

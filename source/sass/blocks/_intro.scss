@@ -1,7 +1,7 @@
 .intro {
   position: relative;
 
-  margin-top: 100px;
+  margin-top: 0;
   padding-top: 26px;
   padding-bottom: 22px;
 
@@ -75,7 +75,7 @@ Media min-width: 768px*/
   .intro__inner {
     position: relative;
 
-    padding-left: 117px;
+    padding-left: 87px;
 
     text-align: left;
   }
@@ -103,7 +103,7 @@ Media min-width: 768px*/
   .intro__picture {
     position: absolute;
     top: 202px;
-    left: 29px;
+    left: -1px;
     z-index: -1;
   }
 
@@ -137,18 +137,18 @@ Media min-width: 1300px*/
   }
 
   .intro__inner {
-    padding-top: 196px;
-    padding-left: 120px;
+    padding-top: 197px;
+    padding-left: 81px;
   }
 
   .intro__text {
-    margin-bottom: 54px;
+    margin-bottom: 53px;
   }
 
   .intro__picture {
     position: absolute;
     top: 117px;
-    left: 491px;
+    left: 451px;
     z-index: -1;
   }
 }
