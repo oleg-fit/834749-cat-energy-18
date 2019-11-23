@@ -82,8 +82,8 @@ Media min-width: 768px*/
 
   .example-slider__cat--before {
     position: absolute;
-    top: -170px;
-    left: 46px;
+    top: -169px;
+    left: 16px;
 
     height: 517px;
     width: 690px;
@@ -101,7 +101,7 @@ Media min-width: 768px*/
 
   .example-slider__btn-block {
     width: 570px;
-    margin-top: 83px;
+    margin-top: 84px;
     padding-top: 13px;
     margin-left: auto;
     margin-right: auto;
@@ -120,15 +120,18 @@ Media min-width: 768px*/
   }
 
   .example-slider__line-circle {
-    display: block;
     position: absolute;
+    bottom: -14px;
+    left: 201px;
+
+    display: block;
     width: 32px;
     height: 32px;
+
     background-color: $color-white;
     border-radius: 50%;
     border: 1px solid #dcdcdc;
-    bottom: -15px;
-    left: 200px;
+
     cursor: pointer;
     box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.15);
 

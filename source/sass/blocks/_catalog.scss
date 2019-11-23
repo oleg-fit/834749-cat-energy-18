@@ -1,11 +1,11 @@
 .catalog {
-  padding-top: 35px;
+  padding-top: 0;
   padding-bottom: 25px;
 }
 
 .catalog-title {
-  margin-top: 14px;
-  margin-bottom: 29px;
+  margin-top: 15px;
+  margin-bottom: 28px;
   padding-left: 20px;
 
   font-size: 36px;
@@ -18,6 +18,10 @@
 /* =====================================================================================
 Media min-width: 768px*/
 @media (min-width: 768px) {
+  .catalog {
+    padding-top: 40px;
+  }
+
   .catalog-title {
     padding: 0;
 
@@ -30,6 +34,6 @@ Media min-width: 768px*/
 Media min-width: 1300px*/
 @media (min-width: 1300px) {
   .catalog {
-    padding-top: 55px;
+    padding-top: 56px;
   }
 }
