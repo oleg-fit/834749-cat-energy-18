@@ -9,56 +9,48 @@
 </head>
 <body class="form-page">
 
-  <header class="form-page__header header">
+  <header class="header">
     <div class="container">
       <div class="header__inner">
 
-        <div class="header__block-logo block-logo">
+        <a class="header__link" href="index.html">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="header__img" alt="логотип Cat Energy" src="img/logo-mobile.svg">
+          </picture>
+        </a>
 
-          <a class="block-logo__link" href="#">
-            <picture>
-              <source media="(min-width: 1300px)" srcset="https://via.placeholder.com/202x59">
-              <source media="(min-width: 768px)" srcset="https://via.placeholder.com/173x58">
-              <img class="page-header__logo" src="https://via.placeholder.com/33x38" alt="Логотип Cat Energy">
-            </picture>
-            <span>
-              <img src="https://via.placeholder.com/101x18" alt="Текст Cat Energy">
-            </span>
-          </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
 
-          <button class="block-logo__btn">
-            <span class="block-logo__burger"></span>
-            <span class="visually-hidden">
-              Menu
-            </span>
+          <button class="main-nav__toggle" type="button">
+            <span class="main-nav__bar"></span>
+            <span class="visually-hidden">Открыть список</span>
           </button>
 
-        </div>
+          <ul  class="main-nav__list">
 
-        <nav class="header__nav nav">
-
-          <ul class="nav__list">
-
-            <li class="nav__item">
-              <a class="nav__link" href="index.html">
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="index.html">
                 Главная
               </a>
             </li>
 
-            <li class="nav__item">
-              <a class="nav__link" href="catalog.html">
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
 
-            <li class="nav__item">
-              <a class="nav__link nav__link--active" href="form.html">
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link  main-nav__list-link--active" href="form.html">
                 Подбор программы
               </a>
             </li>
 
-          </ul>  <!-- /.nav__list -->
-        </nav>  <!-- /.header__nav nav -->
+          </ul>  <!-- /.main-nav__list -->
+
+        </nav>  <!-- /.main-nav -->
 
       </div>  <!-- /.header__inner -->
     </div>  <!-- /.container -->
