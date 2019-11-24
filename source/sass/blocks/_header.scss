@@ -31,6 +31,8 @@ Media min-width: 768px*/
 @media (min-width: $tablet-width) {
   .header {
     padding-top: 23px;
+
+    border-bottom: transparent;
   }
 
   .header__inner {
