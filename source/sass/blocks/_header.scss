@@ -55,6 +55,10 @@ Media min-width: 768px*/
 /* =====================================================================================
 Media min-width: 1300px*/
 @media (min-width: $desktop-width) {
+  .header__link {
+    max-width: 202px;
+  }
+
   .header__img {
     height: 59px;
     width: 202px;

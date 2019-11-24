@@ -15,6 +15,10 @@
   border-bottom: 1px solid #d9d9d9;
 }
 
+.social-list__img {
+  fill: $color-grey3;
+}
+
 .social-list__link:hover .social-list__img,
 .social-list__link:focus .social-list__img {
   fill: $color-green;
@@ -23,6 +27,21 @@
 .social-list__link:active .social-list__img {
   fill: $color-green;
   opacity: 0.3;
+}
+
+.social-list__img--vk {
+  height: 12px;
+  width: 22px;
+}
+
+.social-list__img--insta {
+  height: 16px;
+  width: 16px;
+}
+
+.social-list__img--fb {
+  height: 19px;
+  width: 10px;
 }
 
 /* =====================================================================================
