@@ -37,7 +37,7 @@
   padding-top: 24px;
   margin-bottom: 27px;
 
-  border: 1px solid #ededed;
+  border: 1px solid $color-grey2;
 }
 
 .form__fieldset--contacts {
@@ -58,7 +58,7 @@
   font-size: 24px;
   line-height: 24px;
 
-  background-color: #ffffff;
+  background-color: $color-white;
 }
 
 .form__legend::after {
@@ -71,7 +71,7 @@
   margin-top: 14px;
   margin-left: 23px;
 
-  background-color: #68b738;
+  background-color: $color-green;
   z-index: -1;
 }
 
@@ -87,7 +87,7 @@
   padding-top: 11px;
   padding-left: 15px;
 
-  border: 1px solid #e6e6e6;
+  border: 1px solid $color-grey4;
   resize: none;
 
   &::placeholder {
@@ -95,11 +95,11 @@
   }
 
   &:hover {
-    border: 1px solid #cdcdcd;
+    border: 1px solid $color-border;
   }
 
   &:focus {
-    border: 1px solid #444444;
+    border: 1px solid $color-bluish-black;
     outline: none;
   }
 }
