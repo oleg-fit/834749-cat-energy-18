@@ -1,6 +1,6 @@
 /* =====================================================================================
 Media min-width: 768px*/
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .catalog-page__catalog:nth-child(2) {
     margin-top: -91px;
   }
@@ -8,7 +8,7 @@ Media min-width: 768px*/
 
 /* =====================================================================================
 Media min-width: 1300px*/
-@media (min-width: 1300px) {
+@media (min-width: $desktop-width) {
   .catalog-page__catalog:nth-child(2) {
     margin-top: -85px;
   }

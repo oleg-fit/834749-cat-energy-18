@@ -9,7 +9,7 @@
   vertical-align: middle;
   padding-left: 46px;
 
-  color: #222222;
+  color: $color-black2;
 
   &:hover .program-list__radio {
     border: 1px solid #bcbcbc;
@@ -39,7 +39,7 @@
   height: 12px;
   width: 12px;
 
-  background: #68b738;
+  background: $color-green;
   border-radius: 50%;
 
   transform: translate(-50%, -50%) scale(0);
@@ -79,7 +79,7 @@
 
 /* =====================================================================================
 Media min-width: 768px*/
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .program-list__item {
     margin-bottom: 29px;
   }

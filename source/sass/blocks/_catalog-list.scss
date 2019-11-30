@@ -17,7 +17,7 @@
   padding-top: 5px;
   padding-bottom: 24px;
 
-  border: 1px solid #ededed;
+  border: 1px solid $color-grey2;
   border-bottom: transparent;
 }
 
@@ -26,7 +26,7 @@
 
   text-align: center;
 
-  border: 1px solid #ededed;
+  border: 1px solid $color-grey2;
 
   .catalog-list__title {
     max-width: 100%;
@@ -43,7 +43,7 @@
     line-height: 16px;
     letter-spacing: -0.15px;
 
-    color: #444444;
+    color: $color-bluish-black;
   }
 }
 
@@ -74,7 +74,7 @@
   line-height: 20px;
   text-transform: uppercase;
 
-  color: #111111;
+  color: $color-black;
 }
 
 /* =====================================================================================
@@ -92,7 +92,7 @@ Media min-width: 768px*/
     margin-bottom: 139px;
     padding-bottom: 40px;
 
-    background-color: #f2f2f2;
+    background-color: $color-smoky-white;
     border: transparent;
 
     &:nth-child(2n) {
@@ -107,7 +107,7 @@ Media min-width: 768px*/
   .catalog-list__item:last-child {
     padding-top: 68px;
 
-    background-color: #ffffff;
+    background-color: $color-white;
 
     .catalog-list__title {
       max-width: 170px;

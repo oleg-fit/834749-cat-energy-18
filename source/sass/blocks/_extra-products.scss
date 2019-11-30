@@ -1,5 +1,5 @@
 .extra-products {
-  border-top: 3px solid #68b738;
+  border-top: 3px solid $color-green;
 }
 
 .extra-products__title {
@@ -11,9 +11,9 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  color: #111111;
+  color: $color-black;
 
-  background-color: #ffffff;
+  background-color: $color-white;
 }
 
 .extra-products__gift {
@@ -28,7 +28,7 @@
 
   text-align: center;
 
-  background-color: #71b548;
+  background-color: $color-green2;
 }
 
 .extra-products__gift::before {
@@ -53,12 +53,12 @@
   font-size: 16px;
   line-height: 20px;
 
-  color: #ffffff;
+  color: $color-white;
 }
 
 /* =====================================================================================
 Media min-width: 768px*/
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .extra-products__title {
     max-width: 413px;
     margin-top: -26px;
@@ -96,7 +96,7 @@ Media min-width: 768px*/
 
 /* =====================================================================================
 Media min-width: 1300px*/
-@media (min-width: 1300px) {
+@media (min-width: $desktop-width) {
   .extra-products__title {
     margin-bottom: 64px;
     margin-left: -40px;

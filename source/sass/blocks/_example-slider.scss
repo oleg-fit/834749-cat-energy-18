@@ -46,7 +46,7 @@
   width: 84px;
   height: 14px;
 
-  border: 1px solid #cdcdcd;
+  border: 1px solid $color-border-hover;
   background-color: $color-white;
   border-radius: 50px;
 }
@@ -115,7 +115,7 @@ Media min-width: 768px*/
   .example-slider__progress-line {
     width: 430px;
     height: 6px;
-    background-color: #dcdcdc;
+    background-color: $color-grey5;
     border: none;
   }
 
@@ -130,7 +130,7 @@ Media min-width: 768px*/
 
     background-color: $color-white;
     border-radius: 50%;
-    border: 1px solid #dcdcdc;
+    border: 1px solid $color-grey5;
 
     cursor: pointer;
     box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.15);

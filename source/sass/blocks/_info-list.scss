@@ -13,7 +13,7 @@
     font-size: 12px;
     line-height: 16px;
 
-    color: #444444;
+    color: $color-bluish-black;
 
     &:last-child {
       margin-right: -3px;
@@ -23,7 +23,7 @@
 
 /* =====================================================================================
 Media min-width: 768px*/
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .info-list {
     margin-right: 1px;
   }
@@ -32,7 +32,7 @@ Media min-width: 768px*/
     margin-bottom: 8px;
     padding-bottom: 7px;
 
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid $color-border-hover;
 
     span {
       font-size: 16px;
@@ -42,7 +42,7 @@ Media min-width: 768px*/
 
 /* =====================================================================================
 Media min-width: 1300px*/
-@media (min-width: 1300px) {
+@media (min-width: $desktop-width) {
   .info-list {
     margin-right: 3px;
   }
