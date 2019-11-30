@@ -72,7 +72,7 @@
 
 /* =====================================================================================
 Media min-width: 768px*/
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .extra-list {
     display: flex;
     justify-content: space-between;
@@ -98,8 +98,12 @@ Media min-width: 768px*/
 
 /* =====================================================================================
 Media min-width: 1300px*/
-@media (min-width: 1300px) {
+@media (min-width: $desktop-width) {
   .extra-list__item {
     width: 245px;
+  }
+
+  .example__list-text {
+    background-color: $color-smoky-white;
   }
 }
