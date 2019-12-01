@@ -46,7 +46,7 @@
   width: 84px;
   height: 14px;
 
-  border: 1px solid #cdcdcd;
+  border: 1px solid $color-border-hover;
   background-color: $color-white;
   border-radius: 50px;
 }
@@ -72,34 +72,46 @@
 /* =====================================================================================
 Media min-width: 768px*/
 @media (min-width: $tablet-width) {
-  // .example-slider {
-  //   background: linear-gradient(left, $color-smoky-white 50%, $color-light-grey2 50%);
-  // }
-
   .example-slider__inner {
-    padding-bottom: 76px;
+    display: flex;
+    padding-bottom: 74px;
+  }
+
+  .example-slider__img-block--before {
+    position: relative;
+
+    overflow: hidden;
+    background-color: red;
   }
 
   .example-slider__cat--before {
-    position: absolute;
-    top: -169px;
-    left: 16px;
+    // position: absolute;
+    // top: -169px;
+    // left: 16px;
 
     height: 517px;
     width: 690px;
   }
 
-  .example-slider__cat--after {
-    position: absolute;
-    top: -170px;
-    right: 33px;
+  .example-slider__img-block--after {
+    position: relative;
 
-    display: block;
+    overflow: hidden;
+    background-color: green;
+  }
+
+  .example-slider__cat--after {
+    // position: absolute;
+    // top: -169px;
+    // right: 2px;
+
     height: 517px;
     width: 690px;
   }
 
   .example-slider__btn-block {
+    position: absolute;
+
     width: 570px;
     margin-top: 84px;
     padding-top: 13px;
@@ -115,7 +127,7 @@ Media min-width: 768px*/
   .example-slider__progress-line {
     width: 430px;
     height: 6px;
-    background-color: #dcdcdc;
+    background-color: $color-grey5;
     border: none;
   }
 
@@ -130,7 +142,7 @@ Media min-width: 768px*/
 
     background-color: $color-white;
     border-radius: 50%;
-    border: 1px solid #dcdcdc;
+    border: 1px solid $color-grey5;
 
     cursor: pointer;
     box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.15);
@@ -153,5 +165,32 @@ Media min-width: 768px*/
     &:active {
       box-shadow: inset 0 0 0 2px $color-green;
     }
+  }
+}
+
+/* =====================================================================================
+Media min-width: 1300px*/
+@media (min-width: $desktop-width) {
+  .example-slider {
+    max-width: 710px;
+    width: 100%;
+  }
+
+  .example-slider__cat--before {
+    top: -190px;
+    left: 60px;
+
+    clip: rect(auto, 365px, auto, auto);
+  }
+
+  .example-slider__cat--after {
+    top: -190px;
+    right: -40px;
+
+    clip: rect(auto, auto, auto, 365px);
+  }
+
+  .example-slider__btn-block {
+    margin-left: 140px;
   }
 }

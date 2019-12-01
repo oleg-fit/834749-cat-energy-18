@@ -18,11 +18,11 @@
 .nav__item {
   padding-top: 22px;
   padding-bottom: 19px;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid $color-grey4;
 }
 
 .nav__item:first-child {
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid $color-grey4;
 }
 
 .nav__link {
@@ -31,21 +31,21 @@
   line-height: 20px;
   text-transform: uppercase;
 
-  color: #111111;
+  color: $color-black;
 
   &:hover,
   &:focus {
-    color: rgba(#111111, 0.6);
+    color: rgba($color-black, 0.6);
   }
 
   &:active {
-    color: rgba(#111111, 0.3);
+    color: rgba($color-black, 0.3);
   }
 }
 
 /* =====================================================================================
 Media min-width: 768px*/
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .nav {
     display: block;
     max-width: 443px;
@@ -88,13 +88,13 @@ Media min-width: 768px*/
     height: 2px;
     width: 100%;
 
-    background-color: #68b738;
+    background-color: $color-green;
   }
 }
 
 /* =====================================================================================
 Media min-width: 1300px*/
-@media (min-width: 1300px) {
+@media (min-width: $desktop-width) {
   .nav {
     max-width: 481px;
   }

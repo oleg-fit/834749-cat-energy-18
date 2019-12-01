@@ -16,7 +16,7 @@
 
 /* =====================================================================================
 Media min-width: 768px*/
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .form-page__section {
     padding-top: 55px;
   }
@@ -31,7 +31,7 @@ Media min-width: 768px*/
 
 /* =====================================================================================
 Media min-width: 1300px*/
-@media (min-width: 1300px) {
+@media (min-width: $desktop-width) {
   .form-page__section {
     padding-top: 72px;
   }

@@ -9,10 +9,6 @@
 </head>
 <body class="main-page">
 
-  <div style="display:none">
-    <defs src="img/sprite.svg"></defs>
-  </div>
-
   <header class="header">
     <div class="container">
       <div class="header__inner">
@@ -21,7 +17,7 @@
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="header__img" alt="логотип Cat Energy" src="img/logo-mobile.svg">
+            <img class="header__img" alt="логотип Cat Energy" src="img/logo-mobile.svg" width="191" height="38">
           </picture>
         </a>
 
@@ -74,10 +70,10 @@
             Занялся собой? Займись котом!
           </p>
 
-          <picture class="intro__picture">
-            <source media="(min-width: 1280px)" srcset="img/index-can-desktop@1x.png">
-            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-            <img alt="Продукт Energy" src="img/index-can-mobile@1x.png">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
+            <img class="intro__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Продукт" width="280" height="271">
           </picture>
 
           <a class="intro__link btn-page" href="#">
@@ -212,17 +208,19 @@
           <div class="example-slider">
             <div class="example-slider__inner">
 
-              <div class="example-slider__img-block">
+              <div class="example-slider__img-block example-slider__img-block--before">
                 <picture>
-                  <source media="(min-width: 1280px)" srcset="img/before-desktop@1x.png 1x">
-                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x">
-                  <img alt="Огромный кот" class="example-slider__cat example-slider__cat--before" src="img/before-mobile@1x.png">
+                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
+                  <img class="example-slider__cat example-slider__cat--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Большой кот">
                 </picture>
+              </div>
 
+              <div class="example-slider__img-block example-slider__img-block--after">
                 <picture>
-                  <source media="(min-width: 1280px)" srcset="img/after-desktop@1x.png 1x">
-                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x">
-                  <img alt="Спортивный кот" class="example-slider__cat example-slider__cat--after" src="img/after-mobile@1x.png">
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+                  <img class="example-slider__cat example-slider__cat--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Большой кот">
                 </picture>
               </div>
 
@@ -269,12 +267,12 @@
       <div class="footer__map">
 
         <picture>
-          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-          <img class="footer__map-img" src="img/bg-map-mobile@1x.png" alt="Схема проезда ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-tablet@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
+          <img class="footer__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Схема проезда ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </picture>
 
-        <!-- <iframe class="footer__map-iframe" src="https://yandex.ru/map-widget/v1/-/CGTnAVim" width="100%" height="360" frameborder="1" allowfullscreen="true"></iframe> -->
+        <iframe class="footer__map-iframe" src="https://yandex.ru/map-widget/v1/-/CGTnAVim" width="100%" height="360" frameborder="1" allowfullscreen="true"></iframe>
 
       </div>  <!-- /.footer__map -->
 
