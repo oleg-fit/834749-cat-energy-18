@@ -197,7 +197,7 @@ Media min-width: 768px*/
   }
 
   .catalog-list__img--small,
-  .catalog-list__img--big  {
+  .catalog-list__img--big {
     width: 324px;
   }
 
@@ -236,7 +236,6 @@ Media min-width: 768px*/
   .catalog-list__show-box::before {
     top: -109px;
     left: 56px;
- 
     height: 60px;
     width: 60px;
     background-image: url("../../img/icon-plus.svg");
