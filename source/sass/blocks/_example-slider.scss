@@ -72,6 +72,12 @@ Media min-width: 768px*/
 
   .example-slider__block-after {
     display: block;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-color: $color-light-grey2;
   }
 
   .example-slider__boz-img {
@@ -86,14 +92,6 @@ Media min-width: 768px*/
     left: 0;
   }
 
-  .example-slider__block-after {
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    background-color: $color-light-grey2;
-  }
-
   .example-slider__cat--after {
     position: absolute;
     top: -168px;
@@ -104,10 +102,6 @@ Media min-width: 768px*/
     margin-right: -100px;
     margin-left: -100px;
   }
-
-
-
-
 
   .example-slider__btn-block {
     position: absolute;
@@ -169,6 +163,3 @@ Media min-width: 768px*/
 
 /* =====================================================================================
 Media min-width: 1300px*/
-@media (min-width: $desktop-width) {
-
-}
