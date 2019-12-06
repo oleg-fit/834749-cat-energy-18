@@ -5,16 +5,7 @@
   padding-bottom: 36px;
 }
 
-.example-slider__cat--before {
-  position: absolute;
-  top: 1px;
-  left: 0;
-
-  height: 240px;
-  width: 320px;
-}
-
-.example-slider__cat--after {
+.example-slider__block-after {
   display: none;
 }
 
@@ -73,50 +64,58 @@
 Media min-width: 768px*/
 @media (min-width: $tablet-width) {
   .example-slider__inner {
-    display: flex;
-    padding-bottom: 74px;
-  }
-
-  .example-slider__img-block--before {
     position: relative;
 
-    overflow: hidden;
-    background-color: red;
+    display: flex;
+    padding: 0;
   }
 
-  .example-slider__cat--before {
-    // position: absolute;
-    // top: -169px;
-    // left: 16px;
+  .example-slider__block-after {
+    display: block;
+  }
 
-    height: 517px;
+  .example-slider__boz-img {
+    position: relative;
+    min-height: 517px;
     width: 690px;
   }
 
-  .example-slider__img-block--after {
-    position: relative;
+  .example-slider__block-before {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-    overflow: hidden;
-    background-color: green;
+  .example-slider__block-after {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-color: $color-light-grey2;
   }
 
   .example-slider__cat--after {
-    // position: absolute;
-    // top: -169px;
-    // right: 2px;
+    position: absolute;
+    top: -168px;
+    left: 0;
 
-    height: 517px;
-    width: 690px;
+    height: 607px;
+    max-width: 400px;
+    margin-right: -100px;
+    margin-left: -100px;
   }
+
+
+
+
 
   .example-slider__btn-block {
     position: absolute;
+    bottom: 0;
+    left: 0;
 
     width: 570px;
-    margin-top: 84px;
-    padding-top: 13px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0;
   }
 
   .example-slider__btn {
@@ -171,26 +170,5 @@ Media min-width: 768px*/
 /* =====================================================================================
 Media min-width: 1300px*/
 @media (min-width: $desktop-width) {
-  .example-slider {
-    max-width: 710px;
-    width: 100%;
-  }
 
-  .example-slider__cat--before {
-    top: -190px;
-    left: 60px;
-
-    clip: rect(auto, 365px, auto, auto);
-  }
-
-  .example-slider__cat--after {
-    top: -190px;
-    right: -40px;
-
-    clip: rect(auto, auto, auto, 365px);
-  }
-
-  .example-slider__btn-block {
-    margin-left: 140px;
-  }
 }
