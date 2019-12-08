@@ -115,7 +115,7 @@ Media min-width: 768px*/
   .example__description {
     margin-bottom: 0;
     padding-right: 0;
-    padding-bottom: 255px;
+    padding-bottom: 85px;
     padding-left: 0;
   }
 
@@ -198,7 +198,6 @@ Media min-width: 1300px*/
     position: relative;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
     background-color: $color-smoky-white;

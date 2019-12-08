@@ -156,6 +156,9 @@ Media min-width: 768px*/
   }
 
   .catalog-list__item {
+    display: flex;
+    flex-direction: column;
+
     max-width: 324px;
     width: 100%;
     margin-top: 141px;
@@ -182,6 +185,7 @@ Media min-width: 768px*/
   .catalog-list__item-inner {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     justify-content: flex-end;
     min-height: 474px;
     margin-top: -83px;
