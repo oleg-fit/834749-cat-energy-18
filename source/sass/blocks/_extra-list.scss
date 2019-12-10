@@ -8,10 +8,10 @@
   padding-left: 46px;
 
   color: $color-black2;
+}
 
-  &:hover .extra-list__check-box {
-    border: 1px solid #bcbcbc;
-  }
+.extra-list__label:hover .extra-list__check-box {
+  border: 1px solid #bcbcbc;
 }
 
 .extra-list__check-box {

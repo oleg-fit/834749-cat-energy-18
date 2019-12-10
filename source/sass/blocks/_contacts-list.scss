@@ -8,10 +8,8 @@
   margin-bottom: 14px;
 }
 
-.contacts-list__item:first-child {
-  .contacts-list__input {
-    margin-left: 14px;
-  }
+.contacts-list__item:first-child .contacts-list__input {
+  margin-left: 14px;
 }
 
 .contacts-list__label {
