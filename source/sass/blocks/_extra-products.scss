@@ -51,10 +51,6 @@
   background-position: center center;
   background-repeat: no-repeat;
 
-  &::before {
-    fill: $color-white;
-  }
-
   @media (min-resolution: $retina-dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
   }
@@ -70,6 +66,7 @@
   height: 60px;
   width: 55px;
 
+  fill: $color-white;
   background-image: url("../img/icon-gift.svg");
 }
 
