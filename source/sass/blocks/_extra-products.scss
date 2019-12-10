@@ -6,6 +6,7 @@
   position: relative;
 
   max-width: 267px;
+  margin-top: 24px;
   margin-bottom: 34px;
   padding-left: 19px;
 
@@ -87,7 +88,8 @@ Media min-width: 768px*/
 @media (min-width: $tablet-width) {
   .extra-products__title {
     max-width: 413px;
-    margin-bottom: 82px;
+    margin-top: 37px;
+    margin-bottom: 80px;
     padding-left: 37px;
 
     font-size: 36px;
