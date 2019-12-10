@@ -148,6 +148,8 @@ Media min-width: 1300px*/
 
     span:nth-child(2n) {
       width: 44px;
+
+      white-space: nowrap;
     }
   }
 }

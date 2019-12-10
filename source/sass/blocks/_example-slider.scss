@@ -28,7 +28,7 @@
   text-transform: uppercase;
 
   background: transparent;
-  border: none;
+  border: transparent;
   cursor: pointer;
 }
 
@@ -153,7 +153,7 @@ Media min-width: 768px*/
 
   .example-slider__btn-block {
     position: absolute;
-    bottom: 74px;
+    bottom: 67px;
     left: 13px;
 
     width: 570px;
@@ -161,13 +161,31 @@ Media min-width: 768px*/
   }
 
   .example-slider__btn {
+    padding-bottom: 5px;
+
     font-size: 20px;
     line-height: 20px;
+
+    border-top: transparent;
+    border-right: transparent;
+    border-bottom: 1px dotted #bebebe;
+    border-left: transparent;
+  }
+
+  .example-slider__btn:hover,
+  .example-slider__btn:hover {
+    border-bottom: 1px solid #989898;
+  }
+
+  .example-slider__btn:active {
+    border-bottom: transparent;
   }
 
   .example-slider__progress-line {
     width: 430px;
     height: 6px;
+    margin-bottom: 5px;
+
     background-color: $color-grey5;
     border: none;
   }
@@ -238,7 +256,11 @@ Media min-width: 1300px*/
   }
 
   .example-slider__btn-block {
-    bottom: 53px;
+    bottom: 46px;
     left: 40px;
+  }
+
+  .example-slider__progress-line {
+    margin-bottom: 9px;
   }
 }

@@ -213,6 +213,10 @@ Media min-width: 1300px*/
   .advantage__item {
     max-width: 245px;
     margin-bottom: 0;
+
+    &::before {
+      top: 40px;
+    }
   }
 
   .advantage__text {

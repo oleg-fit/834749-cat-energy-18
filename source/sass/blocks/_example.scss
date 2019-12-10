@@ -152,11 +152,25 @@ Media min-width: 768px*/
     line-height: 37px;
   }
 
-  .example__list-text {
+  .example__list-item:first-child .example__list-text {
     bottom: -7px;
-    left: 15px;
+    left: 22px;
 
-    max-width: 129px;
+    max-width: 115px;
+    padding-right: 0;
+    padding-left: 0;
+
+    font-size: 14px;
+    line-height: 14px;
+
+    background-color: $color-white;
+  }
+
+  .example__list-item:nth-child(2) .example__list-text {
+    bottom: -7px;
+    left: 10px;
+
+    max-width: 140px;
     padding-right: 0;
     padding-left: 0;
 
@@ -245,6 +259,22 @@ Media min-width: 1300px*/
   .example__list {
     max-width: 366px;
     margin-bottom: 60px;
+  }
+
+  .example__list-item:first-child .example__list-text {
+    bottom: -5px;
+    left: 23px;
+
+    background-color: $color-smoky-white;
+  }
+
+  .example__list-item:nth-child(2) .example__list-text {
+    bottom: -5px;
+    left: 10px;
+
+    letter-spacing: -0.25px;
+
+    background-color: $color-smoky-white;
   }
 
   .example__cost {
