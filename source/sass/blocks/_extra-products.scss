@@ -6,6 +6,7 @@
   position: relative;
 
   max-width: 267px;
+  margin-top: 24px;
   margin-bottom: 34px;
   padding-left: 19px;
 
@@ -15,20 +16,20 @@
   color: $color-black;
 
   background-color: $color-white;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
+.extra-products__title::after {
+  content: "";
+  position: absolute;
+  top: 0;
 
-    width: 100vw;
-    height: 3px;
-    margin-top: 14px;
-    margin-left: 23px;
+  width: 100vw;
+  height: 3px;
+  margin-top: 14px;
+  margin-left: 23px;
 
-    background-color: $color-green;
-    z-index: -1;
-  }
+  background-color: $color-green;
+  z-index: -1;
 }
 
 .extra-products__gift {
@@ -51,10 +52,6 @@
   background-position: center center;
   background-repeat: no-repeat;
 
-  &::before {
-    fill: $color-white;
-  }
-
   @media (min-resolution: $retina-dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
   }
@@ -70,6 +67,7 @@
   height: 60px;
   width: 55px;
 
+  fill: $color-white;
   background-image: url("../img/icon-gift.svg");
 }
 
@@ -90,7 +88,8 @@ Media min-width: 768px*/
 @media (min-width: $tablet-width) {
   .extra-products__title {
     max-width: 413px;
-    margin-bottom: 82px;
+    margin-top: 37px;
+    margin-bottom: 80px;
     padding-left: 37px;
 
     font-size: 36px;

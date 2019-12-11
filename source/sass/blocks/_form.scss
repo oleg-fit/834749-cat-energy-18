@@ -5,6 +5,13 @@
   color: $color-black2;
 }
 
+.form--error .inform-list__input--name,
+.form--error .inform-list__input--weight,
+.form--error .contacts-list__input--mail,
+.form--error .contacts-list__input--tel {
+  border-color: #ff8282;
+}
+
 .form__text {
   max-width: 230px;
   margin-left: 20px;
