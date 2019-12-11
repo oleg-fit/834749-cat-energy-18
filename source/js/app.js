@@ -46,5 +46,3 @@ try {
 } catch (err) {
 
 }
-
-
