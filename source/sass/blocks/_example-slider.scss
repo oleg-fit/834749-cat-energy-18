@@ -87,7 +87,7 @@ Media min-width: 768px*/
     background-color: $color-light-grey2;
   }
 
-  .example-slider::before::after {
+  .example-slider::after {
     z-index: -1;
     content: "";
     position: absolute;
@@ -177,7 +177,7 @@ Media min-width: 768px*/
   }
 
   .example-slider__btn:active {
-    border-bottom: transparent;
+    border-bottom-color: transparent;
   }
 
   .example-slider__progress-line {
